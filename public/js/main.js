@@ -1,5 +1,5 @@
 $(function () {
-  var ws = new WebSocket('ws://ws.revisit.link');
+  var ws = new ReconnectingWebSocket('ws://ws.revisit.link');
   var display = $('.display');
 
   ws.onopen = function() {
@@ -13,9 +13,5 @@ $(function () {
 
     display.prepend(li.append(img));
   };
-
-  setInterval(function () {
-    document.location.reload();
-  }, 60000 * 10);
 });
 
