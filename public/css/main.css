@@ -4,5 +4,25 @@ body {
 
 ul {
   margin: 0 auto;
+  list-style-type: none;
+  padding: 0;
   width: 600px;
+}
+
+footer {
+  background-color: rgba(1, 1, 1, 0.8);
+  bottom: 0;
+  color: #ccc;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  left: 0;
+  padding: 5px;
+  position: fixed;
+  right: 0;
+  text-align: center;
+}
+
+footer a {
+  color: #5ceeff;
+  text-decoration: none;
 }
