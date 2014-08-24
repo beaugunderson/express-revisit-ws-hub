@@ -1,0 +1,17 @@
+{
+  "name": "express-revisit-ws-hub",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^4.8.2",
+    "nconf": "^0.6.9",
+    "ws": "^0.4.32"
+  },
+  "devDependencies": {
+    "nodemon": "^1.2.1"
+  }
+}
