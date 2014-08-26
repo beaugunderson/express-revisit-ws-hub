@@ -33,4 +33,8 @@ app.get('/', function(req, res) {
   res.sendFile( __dirname + '/index.html');
 })
 
-server.listen(nconf.get('port'));
+var port = nconf.get('port');
+
+server.listen(port, function() {
+  console.log("listening on port", port);
+});

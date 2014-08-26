@@ -13,4 +13,17 @@ $(function () {
 
     display.prepend(li.append(img));
   };
+
+  $('.full-screen').click(function() {
+    var body = document.body;
+    if (body.requestFullscreen) {
+      body.requestFullscreen();
+    } else if (body.msRequestFullscreen) {
+      body.msRequestFullscreen();
+    } else if (body.mozRequestFullScreen) {
+      body.mozRequestFullScreen();
+    } else if (body.webkitRequestFullscreen) {
+      body.webkitRequestFullscreen();
+    }
+  });
 });
